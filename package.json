@@ -1,0 +1,12 @@
+{
+  "name": "encryptora",
+  "version": "1.0.0",
+  "description": "Encryptora is an encryption application designed to enhance data security by protecting 3D model transmissions using advanced encryption techniques and AI-powered detection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
