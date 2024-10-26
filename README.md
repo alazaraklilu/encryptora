@@ -26,8 +26,8 @@ Encryptora aims to secure sensitive 3D models in transmission by leveraging post
 - Dependencies
     - Ensure that the following dependencies are installed:
         - Python 3.8+
-        - cryptography library
-        - AI detection libraries (list as necessary)
+        - Cryptography library
+        - AI detection libraries 
 
 # Install dependencies:
 - pip install -r requirements.txt
@@ -46,7 +46,7 @@ Encryptora aims to secure sensitive 3D models in transmission by leveraging post
 - We welcome contributions! Please fork the repository and create a pull request with your improvements.
 - Fork the repo
 - Create your feature branch (git checkout -b feature/YourFeature)
-- Commit your changes (git commit -m 'Add some feature')
+- Commit your changes (git commit -m 'some feature')
 - Push to the branch (git push origin feature/YourFeature)
 - Open a pull request
 
