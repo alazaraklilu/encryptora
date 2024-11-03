@@ -38,6 +38,11 @@ Encryptora aims to secure sensitive 3D models in transmission by leveraging post
 # Options:
 - input: Path to the 3D model file to be encrypted.
 - output: Path to save the encrypted output file.
+- cryption algorithms: 
+    -  CRYSTALS - Kyber (ML - KEM)
+    - CRYSTALS - Dilithium (ML - DSA)
+    - Falcon
+    - SPHINCS
 
 # Configuration
 - Encryptora can be configured using the config.json file, located in the root directory. You can adjust encryption settings, AI detection parameters, and output formats here.
