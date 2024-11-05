@@ -5,6 +5,7 @@ Encryptora is an encryption application designed to enhance data security by pro
 - About
 - Features
 - Installation
+- Process
 - Usage
 - Configuration
 - Contributing
