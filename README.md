@@ -35,6 +35,7 @@ Encryptora aims to secure sensitive 3D models in transmission by leveraging post
 - Usage
 - To start Encryptora, use the following command:
     - python encryptora.py --input your_model_file --output encrypted_model
+    - Understand the dependencies - create storage warehouse for your project.
 
 # Options:
 - input: Path to the 3D model file to be encrypted.
