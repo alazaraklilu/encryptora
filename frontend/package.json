@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Encryptora is an encryption application designed to enhance data security by protecting 3D model transmissions using advanced encryption techniques and AI-powered detection.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start:frontend": "node components/index.tsx",
+    "start:server": "nodemon server.ts",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,11 +19,16 @@
     "@mui/icons-material": "^6.1.5",
     "@mui/material": "^6.1.5",
     "axios": "^1.7.7",
+    "concurrently": "^9.1.0",
     "express": "^4.21.1",
     "nodemon": "^3.1.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0",
+    "react-router-dom": "^6.28.0",
     "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node": "^10.9.2"
   }
 }
