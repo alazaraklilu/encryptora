@@ -1,16 +1,6 @@
 # Encryptora
 Encryptora is an encryption application designed to enhance data security by protecting 3D model transmissions using advanced encryption techniques and AI-powered detection.
 
-# Table of Contents
-- About
-- Features
-- Installation
-- Process
-- Usage
-- Configuration
-- Contributing
-- License
-
 # About
 Encryptora aims to secure sensitive 3D models in transmission by leveraging post-quantum cryptography and spatial geometry. With AI-based detection for added security, Encryptora is built to meet the needs of businesses and developers working with high-stakes visual data.
 
