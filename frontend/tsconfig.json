@@ -14,7 +14,7 @@
   },
   "include": [
     "src",
-    "server.mts"
+    "server.js"
   ], // Files to include in the project
   "exclude": [
     "node_modules",

@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Encryptora is an encryption application designed to enhance data security by protecting 3D model transmissions using advanced encryption techniques and AI-powered detection.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start:frontend": "vite",
-    "start:server": "nodemon --exec ts-node --loader ts-node/esm server.mts",
+    "start:server": "nodemon server.js",
     "start": "concurrently \"npm run start:frontend\" \"npm run start:server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
