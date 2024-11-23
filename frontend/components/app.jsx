@@ -21,7 +21,7 @@ const theme = createTheme({
 const App = () => {
     return (
         <ThemeProvider>
-            <CssBaseline /> // reset default CSS and applies mui theme styling
+            <CssBaseline />
             <Router>
                 <Routes>
                     <Route path="/" element={<h1>Welcome to the App</h1>} />
