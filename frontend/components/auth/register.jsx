@@ -5,6 +5,24 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 function Register() {
 
+    return (
+
+        <Box sx={{
+
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            minHeight: "100vh",
+            bgcolor: "background.default",
+            p: 3,
+
+        }}
+        >
+
+        </Box>
+
+
+    )
 
 
 
