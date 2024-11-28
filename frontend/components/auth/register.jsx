@@ -19,7 +19,9 @@ function Register() {
         }}
         >
 
-        </Box>
+        </Box> 
+
+        <container></container>
 
 
     )
