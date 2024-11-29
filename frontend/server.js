@@ -1,27 +1,22 @@
 const express = require('express');
 const path = require('path');
-// import { fileURLToPath } from 'url';
-
 const app = express();
-const PORT = process.env.PORT || 5001;
 
-// Middleware to parse JSON requests
-app.use(express.json());
+// Serve the Vite production build
+app.use(express.static(path.join(__dirname, 'dist')));
 
-// Serve static files (React build) if deployed
-app.use(express.static(path.join(__dirname, 'build')));
-
-// Example API route
+// API example (if needed)
 app.get('/api', (req, res) => {
     res.json({ message: 'Server is running successfully!' });
 });
 
-// Catch-all for React frontend
+// Catch-all route to serve the React app for any frontend route
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 });
 
 // Start the server
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
