@@ -2,21 +2,19 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+// Define the path to the frontend's dist folder
+const frontendPath = path.join(__dirname, 'frontend', 'dist');
+
 // Serve the Vite production build
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(frontendPath));
 
-// API example (if needed)
-app.get('/api', (req, res) => {
-    res.json({ message: 'Server is running successfully!' });
-});
-
-// Catch-all route to serve the React app for any frontend route
+// Catch-all route to serve the React app
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+    res.sendFile(path.resolve(frontendPath, 'index.html'));
 });
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
