@@ -2,21 +2,19 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './frontend/main.jsx', // 
+    entry: './frontend/main.jsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         clean: true,
     },
-    mode: 'development',
+    mode: process.env.NODE_ENV || 'development',
     module: {
         rules: [
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                },
+                use: { loader: 'babel-loader' },
             },
             {
                 test: /\.css$/,
