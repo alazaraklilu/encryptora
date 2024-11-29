@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Box, Typography, TextField, Button } from "@mui/material";
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid2';
 
 function Login() {
 

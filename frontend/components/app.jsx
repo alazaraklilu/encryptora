@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Login from './components/auth/login';
-import Register from './components/auth/register';
+import Login from './auth/login';
+import Register from './auth/register';
 
 const theme = createTheme({
 
