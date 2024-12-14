@@ -10,11 +10,13 @@ const Homepage = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 minHeight: "100vh",
+                minWidth: "100vw",
                 bgcolor: "black",
                 color: "white",
                 textAlign: "center",
                 margin: 0,
                 padding: 0,
+                overflow: "hidden",
             }}
         >
             <Typography
