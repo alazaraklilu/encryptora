@@ -13,13 +13,15 @@ const Homepage = () => {
                 bgcolor: "black",
                 color: "white",
                 textAlign: "center",
+                margin: 0,
+                padding: 0,
             }}
         >
             <Typography
-                variant="h2"
+                variant="h1"
                 sx={{
                     fontWeight: "bold",
-                    mb: 4,
+                    mb: 10,
                 }}
             >
                 ENCRYPTORA
@@ -28,7 +30,7 @@ const Homepage = () => {
             <Button
                 variant="contained"
                 sx={{
-                    bgcolor: "#ffffff",
+                    bgcolor: "#00d493",
                     color: "black",
                     fontWeight: "bold",
                     textTransform: "uppercase",

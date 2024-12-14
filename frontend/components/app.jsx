@@ -2,8 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Login from './auth/login';
-import Register from './auth/register';
 import Homepage from './homepage';
 import AuthPage from './auth/authPage';
 
@@ -26,9 +24,8 @@ const App = () => {
         //     <CssBaseline />
         <Router>
             <Routes>
-                <Route path="/" element={<AuthPage />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/" element={<Homepage />} />
+                <Route path="/login" element={<AuthPage />} />
             </Routes>
         </Router>
         // </ThemeProvider>
