@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Login from './auth/login';
 import Register from './auth/register';
 import Homepage from './homepage';
-
+import AuthPage from './auth/authPage';
 
 // const theme = createTheme({
 
@@ -26,7 +26,7 @@ const App = () => {
         //     <CssBaseline />
         <Router>
             <Routes>
-                <Route path="/" element={<h1>Welcome to the App</h1>} />
+                <Route path="/" element={<AuthPage />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
             </Routes>
